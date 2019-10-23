@@ -24,13 +24,13 @@ print('W tekście jest {} liter {} oraz {} liter {}' .format(liczba_liter1, lite
 print('####################')
 text = "Ala ma kota"
 
-print(dir(tmp))
-help(tmp.capitalize())
+print(dir(text))
+help(text.replace("kota", "psa"))
 
 # Zadanie 5
 print('####################')
-#print([::-1] .format(imie))
-print(imie[::-1].capitalize())
+print("Imie i nazwisko z odwrocona kolejnoscia znakow")
+print(imie.lower()[::-1].capitalize(), nazwisko.lower()[::-1].capitalize())
 
 #Zadanie 6
 print('####################')
@@ -44,17 +44,17 @@ print(list1)
 
 #Zadanie 7
 print('####################')
-list.append(0)
-list = list1 + list
-listcopy = list
-print(list)
+list2.append(0)
+list3 = list1 + list2
+list3copy = list3
+print(list3)
 print('*************')
-listcopy.sort()
-print(list1)
+list3copy.sort(reverse=True)
+print(list3copy)
 
 #Zadanie 8
 print('####################')
-studenci =[]
+studenci = []
 student1 = (111111, "Jan", "Kowalski")
 student2 = (222222, "Aneta", "Walecka")
 student3 = (333333, "Zuzanna", "Małecka")
@@ -87,10 +87,21 @@ print(phoneset)
 
 #Zadanie 11
 print('####################')
-for number in range(10):
+for number in range(1, 11):
     print(number)
 
 #Zadanie 12
 print('####################')
-for number in range(100,20,-5):
+for number in range(100,19,-5):
     print(number)
+
+#Zadanie 13
+print('####################')
+combinedDict = []
+movies_list = {1: "Wyspa Tajemnic", 2: "Witaj w klubie", 3: "V jak Vendetta"}
+director_list = {1: "Martin Scorsese", 2: "Jean-Marc Vallee", 3: "James McTeigue"}
+
+combinedDict.append(movies_list)
+combinedDict.append(director_list)
+
+print("{}" .format(combinedDict))
